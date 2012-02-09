@@ -29,16 +29,9 @@ class UtilsCommandController extends \TYPO3\FLOW3\MVC\Controller\CommandControll
 
 
 	/**
-	 * An example command
+	 * Publish all deleted pages from workspace to live
 	 *
-	 * The comment of this command method is also used for FLOW3's help screens. The first line should give a very short
-	 * summary about what the command does. Then, after an empty line, you should explain in more detail what the command
-	 * does. You might also give some usage example.
-	 *
-	 * It is important to document the parameters with param tags, because that information will also appear in the help
-	 * screen.
-	 *
-	 * @param string $workspaceName This argument is required
+	 * @param string $workspaceName Name of workspace to publish from (required)
 	 * @return void
 	 */
 	public function publishDeletedCommand($workspaceName) {
@@ -58,16 +51,9 @@ class UtilsCommandController extends \TYPO3\FLOW3\MVC\Controller\CommandControll
 	}
 
 	/**
-	 * An example command
+	 * Publish everything from workspace to live
 	 *
-	 * The comment of this command method is also used for FLOW3's help screens. The first line should give a very short
-	 * summary about what the command does. Then, after an empty line, you should explain in more detail what the command
-	 * does. You might also give some usage example.
-	 *
-	 * It is important to document the parameters with param tags, because that information will also appear in the help
-	 * screen.
-	 *
-	 * @param string $workspaceName This argument is required
+	 * @param string $workspaceName Name of workspace to publish from (required)
 	 * @return void
 	 */
 	public function publishCommand($workspaceName) {
